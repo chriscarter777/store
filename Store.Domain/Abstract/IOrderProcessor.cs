@@ -7,10 +7,9 @@ using Store.Domain.Entities;
 
 namespace Store.Domain.Abstract
 {
-    public interface IProductRepository
+    public interface IOrderProcessor
     {
-        IEnumerable<Product> Products { get; }
-        void SaveProduct(Product product);
-        Product DeleteProduct(int ProductID);
+        void ProcessOrder(Cart cart, ShippingDetails shippingDetails);
     }
 }
+;
