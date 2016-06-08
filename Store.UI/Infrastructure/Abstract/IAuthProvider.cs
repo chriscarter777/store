@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Store.UI.Infrastructure.Abstract
 {
-    interface IAuthProvider
+    public interface IAuthProvider
     {
         bool Authenticate(string username, string password);
     }

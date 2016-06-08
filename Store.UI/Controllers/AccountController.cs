@@ -36,7 +36,12 @@ namespace Store.UI.Controllers
                     ModelState.AddModelError("", "Incorrect username or password");
                     return View();
                 }
-            }            
+            }
+            else
+            {
+                return View();
+
+            }
         }
     }
 }
